@@ -1,0 +1,212 @@
+% Jason R. Blevins - Curriculum Vitae
+%
+% Copyright (C) 2004-2010 Jason R. Blevins
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{comment}
+
+% Comment the following line to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[sc,osf]{mathpazo}
+
+% In practice, I use the following font packages instead of mathpazo.
+% beramono provides a nice fixed-width font. xagaramon uses the
+% (commercial) Adobe Garamond font.
+%\usepackage[scaled=0.75]{beramono}
+%\usepackage[osf]{xagaramon}
+
+% Set your name here
+\def\name{Shinpei Kato}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 9.0in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets and compact spacing
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+    \setlength{\itemsep}{0.25em}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0.25em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}[t]{0.5\textwidth}
+  Dept. of Information Engineering\\
+  Nagoya University\\
+  Furo-cho, Chikusa-ku, Nagoya 464-8603, JAPAN\\
+\end{minipage}
+\hspace{1em}
+\begin{minipage}[t]{0.5\textwidth}
+  Email: \href{mailto:shinpei@is.nagoya-u.ac.jp}{\tt
+ shinpei@is.nagoya-u.ac.jp} \\
+  Web: \href{http://www.ertl.jp/~shinpei/}{\tt
+ http://www.ertl.jp/\~{}shinpei/} \\
+  Phone: +81-52-789-4597 \\
+\end{minipage}
+
+\section*{RESEARCH INTERESTS}
+
+\begin{itemize}
+
+ \item My research interests include cyber-physical systems and parallel
+       and distributed systems with a particular emphasis on operating
+       systems and system software.
+\end{itemize}
+
+\section*{EDUCATION}
+
+\begin{itemize}
+
+  \item B.S. Dept. of Information and Computer Science, Keio
+	University, 2004.
+
+  \item M.S. Graduate School of Science and Technology, Keio
+	University, 2006.
+
+  \item Ph.D. Graduate School of Science and Technology, Keio
+	University, 2008.\\
+\end{itemize}
+
+\section*{PROFESSIONAL EXPERIENCE}
+
+\begin{itemize}
+
+\item \textbf{Associate Professor}, Dept. of Information
+      Engineering, Nagoya University. Apr 2012 - Present.
+
+\item \textbf{Research Scientist}, Dept. of Computer Science,
+      University of California, Santa Cruz. Jul 2011 - Mar 2012.
+
+\item \textbf{Visiting Scientist}, Dept. of Electrical and
+      Computer Engineering, Carnegie Mellon University, Sep 2009 - Jun
+      2011.
+
+\item \textbf{Research Scientist}, Dept. of Computer Science, The
+      University of Tokyo. Apr 2009 - Jun 2011.
+
+\item \textbf{Research Scientist}, Dept. of Information and
+      Computer Science, Keio University. Apr 2008 - Mar 2009.
+
+\end{itemize}
+
+\section*{SELECTED PUBLICATIONS}
+
+\begin{enumerate}
+ \item Y. Abe, H. Sasaki, S. Kato, K. Inoue, M. Edahiro,
+       M. Peres. "Power and Performance Characterization and Modeling of
+       GPU-accelerated Systems", In Proceedings of the 28th IEEE
+       International Parallel and Distributed Processing Symposium
+       (IPDPS'14), 2014.
+
+ \item  J. Augusto, G. Lima, K. Bletsas, and S. Kato. "Multiprocessor
+	Real-Time Scheduling with a Few Migrating Tasks", In Proceedings
+	of the 34th IEEE Real-Time Systems Symposium (RTSS'13), pp. 170
+	- 181, 2013.
+
+ \item M. Hirabayashi, S. Kato, M. Edahiro, K. Takeda, T. Kawano, and
+       S. Mita. "GPU Implementations of Object Detection using HOG
+       Features and Deformable Models", In Proceedings of the 1st IEEE
+       International Conference on Cyber-Physical Systems, Networks, and
+       Applications (CPSNA'13), 2013.
+
+ \item S. Kato, J. Aumiller, and S. Brandt. "Zero-Copy I/O Processing
+       for Low-Latency GPU Computing", In Proc. of the 4th ACM/IEEE
+       International Conference on Cyber-Physical Systems 
+       (ICCPS'13), pp. 170-178, 2013.
+
+ \item R. Davis and S. Kato. "FPSL, FPCL and FPZL Schedulability
+       Analysis", Real-Time Systems, Vol. 48, No. 6, pp. 750-788, 2012.
+
+ \item S. Kato, M. McThrow, C. Maltzahn, and S. Brandt. "Gdev:
+       First-Class GPU Resource Management in the Operating System", In
+       Proc. of the 2012 USENIX Annual Technical Conference
+       (USENIX ATC'12), 2012.
+
+ \item D. Skourtis, S. Kato, and S. Brandt. "QBox: Guaranteeing I/O
+       Performance on Black Box Storage Systems", In Proceedings of the
+       21st ACM Symposium on High-Performance Parallel and Distributed
+       Computing (HPDC'12), pp. 73-84, 2012.
+
+ \item S. Kato, K. Lakshmanan, A. Kumar, M. Kelkar, Y. Ishikawa, and
+       R. Rajkumar. "RGEM: A Responsive GPGPU Execution Model for
+       Runtime Engines", In Proceedings of the 32nd IEEE Real-Time
+       Systems Symposium (RTSS'11), pp. 57-66, 2011.
+
+ \item S. Kato, K. Lakshmanan, R. Rajkumar, and Y. Ishikawa. "TimeGraph:
+       GPU Scheduling for Real-Time Multi-Tasking Environments", In
+       Proceedings of the 2011 USENIX Annual Technical Conference
+       (USENIX ATC'11), 2011.
+
+ \item S. Kato, Y. Ishikawa, and R. Rajkumar. "CPU Scheduling and Memory
+       Management for Interactive Real-Time Applications", Real-Time
+       Systems, Vol. 47, No. 5, pp. 454 - 488, 2011.
+\end{enumerate}
+
+
+% Footer
+%\begin{center}
+%  \begin{small}
+%   %Last updated: \today
+%  \end{small}
+%\end{center}
+
+\end{document}
